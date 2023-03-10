@@ -56,15 +56,39 @@
 		4D2BF2D229BB1C7300C2AC2F /* ShakaShop */ = {
 			isa = PBXGroup;
 			children = (
-				4D2BF2D329BB1C7300C2AC2F /* AppDelegate.swift */,
-				4D2BF2D529BB1C7300C2AC2F /* SceneDelegate.swift */,
-				4D2BF2D729BB1C7300C2AC2F /* ViewController.swift */,
-				4D2BF2D929BB1C7300C2AC2F /* Main.storyboard */,
+				4D2BF2E929BB235500C2AC2F /* App */,
+				4D2BF2EA29BB236500C2AC2F /* ViewControllers */,
+				4D2BF2EB29BB238100C2AC2F /* Storyboards */,
 				4D2BF2DC29BB1C7500C2AC2F /* Assets.xcassets */,
-				4D2BF2DE29BB1C7500C2AC2F /* LaunchScreen.storyboard */,
-				4D2BF2E129BB1C7500C2AC2F /* Info.plist */,
 			);
 			path = ShakaShop;
+			sourceTree = "<group>";
+		};
+		4D2BF2E929BB235500C2AC2F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BF2E129BB1C7500C2AC2F /* Info.plist */,
+				4D2BF2D329BB1C7300C2AC2F /* AppDelegate.swift */,
+				4D2BF2D529BB1C7300C2AC2F /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4D2BF2EA29BB236500C2AC2F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BF2D729BB1C7300C2AC2F /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4D2BF2EB29BB238100C2AC2F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4D2BF2D929BB1C7300C2AC2F /* Main.storyboard */,
+				4D2BF2DE29BB1C7500C2AC2F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT86C553FH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShakaShop/Info.plist;
+				INFOPLIST_FILE = ShakaShop/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -320,7 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT86C553FH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ShakaShop/Info.plist;
+				INFOPLIST_FILE = ShakaShop/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
