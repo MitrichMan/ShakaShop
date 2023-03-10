@@ -40,7 +40,7 @@ final class ProductsData {
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g",
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g",
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g",
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon ",
+        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon",
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex",
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex",
     ]
@@ -263,12 +263,12 @@ final class ProductsData {
         • Комплект из 3-х плавников
         • Размер M
         """,
-        "FCS II AM PC Tri Retail Fins Cobalt Medium": """
-        """,
-        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
-        """,
-        "Шнурок-крепление для лиша FCS Strings for charity": """
-        """,
+//        "FCS II AM PC Tri Retail Fins Cobalt Medium": """
+//        """,
+//        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
+//        """,
+//        "Шнурок-крепление для лиша FCS Strings for charity": """
+//        """,
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": """
         • 3/16-дюймовый (5 мм) уретановый шнур Dura-Cord высочайшего качества для максимальной прочности
         • 1,5-дюймовая (40 мм) формованная неопреновая манжета на щиколотке
@@ -316,8 +316,8 @@ final class ProductsData {
         • Перфорирован для дополнительной амортизации.
         • Особый рельеф обеспечивает идеальные гидродинамические свойства для сохранения максимальной скорости на волне.
         """,
-        "Гребень для ваксы STICKY BUMPS Easy Grip Comb": """
-        """,
+//        "Гребень для ваксы STICKY BUMPS Easy Grip Comb": """
+//        """,
         "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g": """
         • Температура использования:  подходит для любой ваксы Sticky Bumps
         • Вес: 85 г.
@@ -391,14 +391,51 @@ final class ProductsData {
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": 6850,
     ]
     
-    let productCategory = [
-    "Доски для серфинга",
-    "Фины",
-    "Лиши",
-    "Коврики",
-    "Воск",
-    "Чехлы"
+    let productCategories: [String: Categories] = [
+        "LOST 5’9” RNF ’96": .surfBoards,
+        "LOST 5’11” HYDRA": .surfBoards,
+        "LOST 6’0” BABY BUGGY": .surfBoards,
+        "SCISSORS Buck Up 6’4”": .surfBoards,
+        "SCISSORS Low Bro Neon Green 5’5”": .surfBoards,
+        "SCISSORS Scramble 6’3”": .surfBoards,
+        "SOFTECH Handshaped Sally Fitzgibbons FB 7’0” Mist": .surfBoards,
+        "SOFTECH Roller 8’0” Smoke Green": .surfBoards,
+        "SOFTECH Roller 8’4” Grey": .surfBoards,
+        "FIREWIRE HARLEY INGLEBY LONGBOARDS THUNDERBOLT BLACK HI4 9’3”": .surfBoards,
+        "SEVER Butter Bun 7’6”": .surfBoards,
+        "SEVER Butter Bun 8’0”": .surfBoards,
+        "FCS Connect Screw & Plate PG 9” Clear": .fins,
+        "FCS Connect Screw & Plate GF 9”": .fins,
+        "FCS II Connect PG 9” Navy": .fins,
+        "TORQ 8”": .fins,
+        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M": .fins,
+        "FCS II AM PC Tri Retail Fins Cobalt Medium": .fins,
+        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": .fins,
+        "Шнурок-крепление для лиша FCS Strings for charity": .leashes,
+        "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": .leashes,
+        "FCS 7’ All Round Essential Leash Blue/Black": .leashes,
+        "FCS 9’ All Round Calf Essential Leash Black": .leashes,
+        "FCS Julian Midnight Camo": .tractionPads,
+        "FCS Sally Fitzgibbon Grey/Bright Pink": .tractionPads,
+        "FCS T-3 Black/Charcoal": .tractionPads,
+        "Гребень для ваксы STICKY BUMPS Easy Grip Comb": .wax,
+        "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g": .wax,
+        "STICKY BUMPS Original Cool - Boxed Wax, 85 g": .wax,
+        "STICKY BUMPS Original Tropical - Boxed Wax, 85 g": .wax,
+        "STICKY BUMPS Original Warm - Boxed Wax, 85 g": .wax,
+        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon ": .bags,
+        "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": .bags,
+        "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": .bags,
     ]
+    
+    enum Categories: String {
+        case surfBoards = "Доски для серфинга"
+        case fins = "Фины"
+        case leashes = "Лиши"
+        case tractionPads = "Коврики"
+        case wax = "Воск"
+        case bags = "Чехлы"
+    }
     
     private init() {}
 }
