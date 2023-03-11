@@ -7,32 +7,44 @@
 
 import UIKit
 
-class ProductsListViewController: UITableViewController {
+final class ProductsListViewController: UITableViewController {
     
-    var products: [Product] = []
-
+    var products = Product.getProducts()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         products.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath)
-        var
+        var content = cell.defaultContentConfiguration()
+        let product = products[indexPath.row]
+        
+        content.text = product.name
+        content.image = UIImage(named: product.pictures[0])
+        cell.contentConfiguration = content
+        
+        return cell
     }
 
-    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let indexPath = tableView.indexPathForSelectedRow {
+            guard let detailsAboutProductVC = segue.destination as? DetailsAboutProductViewController else { return }
+            detailsAboutProductVC.product = products[indexPath.row]
+        }
     }
+}
 
+extension ProductsListViewController {
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        70
+    }
+    
+    
 }
