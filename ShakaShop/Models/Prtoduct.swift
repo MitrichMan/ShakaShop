@@ -34,7 +34,7 @@ extension Product {
             
             let pictures = categories[names[index]] == ProductsData.Categories.surfBoards
             ? ["\(names[index]) 1", "\(names[index]) 2"]
-            : ["\(names[index]) 1"]
+            : ["\(names[index]) 1", "\(names[index]) 1"]
             
             products.append(
                 Product(
