@@ -19,6 +19,10 @@
 		4D2BF2F729BC791500C2AC2F /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BF2F629BC791500C2AC2F /* CartViewController.swift */; };
 		4D2BF2FA29BC802E00C2AC2F /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */; };
 		4D2BF30229BD96BA00C2AC2F /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */; };
+		4D2BF2F529BC5FFF00C2AC2F /* Basket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2BF2F429BC5FFF00C2AC2F /* Basket.storyboard */; };
+		882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */; };
+		882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE129BC74C500573B46 /* ProductsListViewController.swift */; };
+		882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		4D2BF2F629BC791500C2AC2F /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
+		4D2BF2F429BC5FFF00C2AC2F /* Basket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Basket.storyboard; sourceTree = "<group>"; };
+		882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsAndDetail.storyboard; sourceTree = "<group>"; };
+		882F7BE129BC74C500573B46 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsListViewController.swift; path = ShakaShop/Storyboards/ProductsListViewController.swift; sourceTree = SOURCE_ROOT; };
+		882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +100,8 @@
 		4D2BF2EA29BB236500C2AC2F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				882F7BE129BC74C500573B46 /* ProductsListViewController.swift */,
+				882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */,
 				4D2BF2D729BB1C7300C2AC2F /* ViewController.swift */,
 				4D2BF2F629BC791500C2AC2F /* CartViewController.swift */,
 				4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */,
@@ -103,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				4D2BF2D929BB1C7300C2AC2F /* Main.storyboard */,
+				882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */,
 				4D2BF2DE29BB1C7500C2AC2F /* LaunchScreen.storyboard */,
 				4D2BF2F429BC5FFF00C2AC2F /* Cart.storyboard */,
 			);
@@ -195,6 +206,7 @@
 				4D2BF2DD29BB1C7500C2AC2F /* Assets.xcassets in Resources */,
 				4D2BF2F529BC5FFF00C2AC2F /* Cart.storyboard in Resources */,
 				4D2BF2DB29BB1C7300C2AC2F /* Main.storyboard in Resources */,
+				882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +220,9 @@
 				4D2BF30229BD96BA00C2AC2F /* PaymentDetailsViewController.swift in Sources */,
 				4D2BF2FA29BC802E00C2AC2F /* CartTableViewCell.swift in Sources */,
 				4D2BF2D829BB1C7300C2AC2F /* ViewController.swift in Sources */,
+				882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */,
 				4D2BF2EF29BB247400C2AC2F /* DataStore.swift in Sources */,
+				882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */,
 				4D2BF2D429BB1C7300C2AC2F /* AppDelegate.swift in Sources */,
 				4D2BF2D629BB1C7300C2AC2F /* SceneDelegate.swift in Sources */,
 				4D2BF2F729BC791500C2AC2F /* CartViewController.swift in Sources */,
