@@ -263,12 +263,12 @@ final class ProductsData {
         • Комплект из 3-х плавников
         • Размер M
         """,
-//        "FCS II AM PC Tri Retail Fins Cobalt Medium": """
-//        """,
-//        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
-//        """,
-//        "Шнурок-крепление для лиша FCS Strings for charity": """
-//        """,
+        //        "FCS II AM PC Tri Retail Fins Cobalt Medium": """
+        //        """,
+        //        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
+        //        """,
+        //        "Шнурок-крепление для лиша FCS Strings for charity": """
+        //        """,
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": """
         • 3/16-дюймовый (5 мм) уретановый шнур Dura-Cord высочайшего качества для максимальной прочности
         • 1,5-дюймовая (40 мм) формованная неопреновая манжета на щиколотке
@@ -316,8 +316,8 @@ final class ProductsData {
         • Перфорирован для дополнительной амортизации.
         • Особый рельеф обеспечивает идеальные гидродинамические свойства для сохранения максимальной скорости на волне.
         """,
-//        "Гребень для ваксы STICKY BUMPS Easy Grip Comb": """
-//        """,
+        //        "Гребень для ваксы STICKY BUMPS Easy Grip Comb": """
+        //        """,
         "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g": """
         • Температура использования:  подходит для любой ваксы Sticky Bumps
         • Вес: 85 г.
@@ -391,7 +391,7 @@ final class ProductsData {
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": 6850,
     ]
     
-    let productCategories: [String: Categories] = [
+    let productsByCategories: [String: Categories] = [
         "LOST 5’9” RNF ’96": .surfBoards,
         "LOST 5’11” HYDRA": .surfBoards,
         "LOST 6’0” BABY BUGGY": .surfBoards,
@@ -428,7 +428,7 @@ final class ProductsData {
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": .bags,
     ]
     
-    enum Categories: String {
+    enum Categories: String, CaseIterable  {
         case surfBoards = "Доски для серфинга"
         case fins = "Фины"
         case leashes = "Лиши"
