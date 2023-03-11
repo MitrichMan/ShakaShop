@@ -12,16 +12,14 @@ class DetailsAboutProductViewController: UIViewController {
     @IBOutlet var picturesImageView: UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var featuresTextView: UITextView!
-    @IBOutlet var imageBotton: UIButton!
     var product: Product!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = product.name
-        picturesImageView.image = UIImage(named: product.pictures[0])
+        picturesImageView.image = UIImage(named: product.pictures.randomElement() ?? "")
         descriptionTextView.text = product.description
         featuresTextView.text = product.feature
-        imageBotton.image = UIImage(named: product.pictures[1])
     }
     @IBAction func imageButton(_ sender: Any) {
     }
