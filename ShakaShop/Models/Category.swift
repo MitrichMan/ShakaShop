@@ -22,6 +22,7 @@ struct Product {
 extension Category {
     static func getCategories() -> [Category] {
         var category: [Category] = []
+        let productList = Product.getProducts()
         
         for selectedCategory in ProductsData.Categories.allCases {
             let categoryName = selectedCategory
@@ -50,7 +51,14 @@ extension Product {
     static func getProducts() -> [Product] {
         var products: [Product] = []
         
-        for index in 0..<ProductsData.shared.productNames.count {
+        let iterationCount = min(
+            ProductsData.shared.productNames.count,
+            ProductsData.shared.productDescription.count,
+            ProductsData.shared.productFeatures.count,
+            ProductsData.shared.productPrices.count
+        )
+        
+        for index in 0..<iterationCount {
             let names = ProductsData.shared.productNames
             let descriptions = ProductsData.shared.productDescription
             let features = ProductsData.shared.productFeatures
