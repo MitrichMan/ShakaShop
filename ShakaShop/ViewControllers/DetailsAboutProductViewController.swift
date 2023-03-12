@@ -7,21 +7,29 @@
 
 import UIKit
 
-class DetailsAboutProductViewController: UIViewController {
+final class DetailsAboutProductViewController: UIViewController {
     
     @IBOutlet var picturesImageView: UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
+    @IBOutlet var priceLabel: UILabel!
     @IBOutlet var featuresTextView: UITextView!
+    
     var product: Product!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = product.name
+        settingsProduct()
+    }
+    
+    @IBAction func imageButton(_ sender: Any) {
+    }
+    
+    private func settingsProduct() {
         picturesImageView.image = UIImage(named: product.pictures.randomElement() ?? "")
         descriptionTextView.text = product.description
         featuresTextView.text = product.feature
-    }
-    @IBAction func imageButton(_ sender: Any) {
+        priceLabel.text = "\(String(product.price)) руб."
     }
     
     /*
