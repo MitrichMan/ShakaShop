@@ -25,11 +25,12 @@
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="-2.1126760563380285"/>
         </scene>
-        <!--Item-->
+        <!--Корзина-->
         <scene sceneID="INJ-0o-EFk">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f31-L6-KOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xha-Um-oZX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Gvr-Hn-NeS"/>
+                    <tabBarItem key="tabBarItem" title="Корзина" image="cart" catalog="system" id="Gvr-Hn-NeS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6I2-0T-BIo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -40,7 +41,6 @@
                         <segue destination="Jxm-Ko-tkf" kind="relationship" relationship="rootViewController" id="G7A-E6-zdy"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f31-L6-KOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.5" y="-2.112676056338028"/>
         </scene>
@@ -53,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3SV-Ku-Fx8">
-                                <rect key="frame" x="0.0" y="50" width="320" height="192"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="265"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductInCart" textLabel="kLh-0P-deq" style="IBUITableViewCellStyleDefault" id="Xzv-oG-8ra" customClass="CartTableViewCell" customModule="ShakaShop" customModuleProvider="target">
@@ -75,46 +75,120 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Gi-7P7">
-                                <rect key="frame" x="16" y="268" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeQ-DM-mDG">
-                                <rect key="frame" x="122" y="504" width="76" height="35"/>
+                                <rect key="frame" x="102" y="449" width="116" height="40"/>
+                                <color key="backgroundColor" red="0.61923977010672715" green="0.89011598344849319" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uMY-rc-9IH"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Перейти к оплате">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToPaymentButtonTapped" destination="Jxm-Ko-tkf" eventType="touchUpInside" id="GNY-wd-61f"/>
+                                    <segue destination="fpt-pL-PxS" kind="show" id="eMO-zU-kba"/>
+                                </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Hy4-xd-KTz">
+                                <rect key="frame" x="16" y="349" width="288" height="65"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0zb-p1-bPG">
+                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Товаров в корзине:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQW-Gi-7P7">
+                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сумма к оплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-ZF-E27">
+                                                <rect key="frame" x="0.0" y="36" width="169.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="169.5" id="ZXO-6E-d8T"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IKJ-e7-Ac5">
+                                        <rect key="frame" x="189.5" y="0.0" width="98.5" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLJ-tf-Ftf">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeD-lo-ujY">
+                                                <rect key="frame" x="0.0" y="34.5" width="98.5" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hbj-2t-gff"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QeQ-DM-mDG" firstAttribute="top" secondItem="jQW-Gi-7P7" secondAttribute="bottom" constant="215" id="0wr-py-N9p"/>
-                            <constraint firstItem="QeQ-DM-mDG" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" constant="122" id="5Wv-f7-Jh1"/>
-                            <constraint firstItem="Hbj-2t-gff" firstAttribute="trailing" secondItem="3SV-Ku-Fx8" secondAttribute="trailing" id="7jv-5Z-fkZ"/>
-                            <constraint firstItem="3SV-Ku-Fx8" firstAttribute="top" secondItem="Hbj-2t-gff" secondAttribute="top" constant="6" id="G7M-fX-Bo6"/>
-                            <constraint firstItem="3SV-Ku-Fx8" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" id="Rbe-Os-6A6"/>
-                            <constraint firstItem="Hbj-2t-gff" firstAttribute="trailing" secondItem="QeQ-DM-mDG" secondAttribute="trailing" constant="122" id="X8t-L9-cz9"/>
-                            <constraint firstItem="jQW-Gi-7P7" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" constant="16" id="g20-Xv-dHk"/>
-                            <constraint firstItem="jQW-Gi-7P7" firstAttribute="top" secondItem="3SV-Ku-Fx8" secondAttribute="bottom" constant="26" id="gAc-0j-hDP"/>
-                            <constraint firstItem="Hbj-2t-gff" firstAttribute="trailing" secondItem="jQW-Gi-7P7" secondAttribute="trailing" constant="16" id="har-jc-mah"/>
-                            <constraint firstItem="QeQ-DM-mDG" firstAttribute="bottom" secondItem="Hbj-2t-gff" secondAttribute="bottom" constant="20" id="owd-iu-uWn"/>
+                            <constraint firstItem="3SV-Ku-Fx8" firstAttribute="trailing" secondItem="Hbj-2t-gff" secondAttribute="trailing" id="5D7-cc-lbw"/>
+                            <constraint firstItem="Hbj-2t-gff" firstAttribute="trailing" secondItem="Hy4-xd-KTz" secondAttribute="trailing" constant="16" id="72Q-gr-NO8"/>
+                            <constraint firstItem="Hbj-2t-gff" firstAttribute="bottom" secondItem="QeQ-DM-mDG" secondAttribute="bottom" constant="30" id="BD4-23-CWR"/>
+                            <constraint firstItem="Hy4-xd-KTz" firstAttribute="top" secondItem="3SV-Ku-Fx8" secondAttribute="bottom" constant="40" id="MiA-1o-k7N"/>
+                            <constraint firstItem="Hy4-xd-KTz" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" constant="16" id="NJM-fX-oYT"/>
+                            <constraint firstItem="QeQ-DM-mDG" firstAttribute="top" secondItem="Hy4-xd-KTz" secondAttribute="bottom" constant="35" id="QfX-gx-UY7"/>
+                            <constraint firstItem="Hbj-2t-gff" firstAttribute="trailing" secondItem="QeQ-DM-mDG" secondAttribute="trailing" constant="102" id="Zbc-mX-WeK"/>
+                            <constraint firstItem="3SV-Ku-Fx8" firstAttribute="top" secondItem="Hbj-2t-gff" secondAttribute="top" id="cDu-cw-01s"/>
+                            <constraint firstItem="QeQ-DM-mDG" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" constant="102" id="gkV-bx-xlT"/>
+                            <constraint firstItem="3SV-Ku-Fx8" firstAttribute="leading" secondItem="Hbj-2t-gff" secondAttribute="leading" id="t6B-sy-yJy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bN4-om-Wad"/>
                     <connections>
                         <outlet property="cartTableView" destination="3SV-Ku-Fx8" id="PER-1I-e2g"/>
+                        <outlet property="goToPaymentButton" destination="QeQ-DM-mDG" id="LnI-do-REC"/>
+                        <outlet property="productsCountLabel" destination="pLJ-tf-Ftf" id="IFT-GB-NCR"/>
+                        <outlet property="totalPriceCount" destination="eeD-lo-ujY" id="Vs2-lS-KIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDh-t4-sN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1837.5" y="-2.112676056338028"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Cbz-bc-uTm">
+            <objects>
+                <viewController id="fpt-pL-PxS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J7r-iL-Bca">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4Fu-th-gWV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hoI-Nz-Od9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzD-Ne-wnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623" y="-2"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="cart" catalog="system" width="128" height="102"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

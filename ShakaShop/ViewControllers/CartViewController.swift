@@ -7,25 +7,49 @@
 
 import UIKit
 
-class CartViewController: UIViewController {
+class CartViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet var cartTableView: UITableView!
+    
+    @IBOutlet var productsCountLabel: UILabel!
+    @IBOutlet var totalPriceCount: UILabel!
+    
+    @IBOutlet var goToPaymentButton: UIButton!
+    
     let categories = Category.getCategories()
     var products: [Product] = []
+    var totalPrice = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         products = getProducts123()
-        print(products.count)
+        totalPrice = getTotalPrice()
+        
+        productsCountLabel.text = "\(products.count)"
+        totalPriceCount.text = "\(totalPrice)"
+        
         cartTableView.delegate = self
         cartTableView.dataSource = self
     }
+    
+    @IBAction func goToPaymentButtonTapped() {
+    }
+    
+    private func getTotalPrice() -> Int {
+        var totalPrice = 0
+        for product in products {
+            totalPrice += product.price
+        }
+        return totalPrice
+    }
 }
 
-extension CartViewController: UITableViewDelegate {
+extension CartViewController {
 
 }
 
+//MARK: - UITableViewDataSource
 extension CartViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         products.count
