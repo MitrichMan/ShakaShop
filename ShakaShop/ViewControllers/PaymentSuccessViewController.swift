@@ -8,11 +8,20 @@
 import UIKit
 
 class PaymentSuccessViewController: UIViewController {
-
+    
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    
+    var customerDetails: [String: String] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameLabel.text = customerDetails["name"]
+        surnameLabel.text = customerDetails["surname"]
+        phoneLabel.text = customerDetails["phone"]
+        emailLabel.text = customerDetails["email"]
     }
     
 

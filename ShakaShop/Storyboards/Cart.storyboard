@@ -180,7 +180,8 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goToPaymentButtonTapped" destination="Jxm-Ko-tkf" eventType="touchUpInside" id="U45-5c-mv8"/>
-                                    <segue destination="nER-6g-lKn" kind="show" id="SBA-rS-oUt"/>
+                                    <action selector="sendDetailsButtonTapped" destination="fpt-pL-PxS" eventType="touchUpInside" id="84C-GN-qpm"/>
+                                    <segue destination="nER-6g-lKn" kind="show" identifier="goToSuccess" id="SBA-rS-oUt"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="yin-DH-cAy">
@@ -195,7 +196,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите ваше имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dy-5m-Vra">
                                         <rect key="frame" x="0.0" y="29.5" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fpt-pL-PxS" id="PtC-gU-wmO"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RS-x3-V0e">
                                         <rect key="frame" x="0.0" y="72.5" width="288" height="20.5"/>
@@ -206,7 +210,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите вашу фамилию" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-fv-ZzA">
                                         <rect key="frame" x="0.0" y="102" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fpt-pL-PxS" id="NI9-v4-7qe"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDW-Fr-ShS">
                                         <rect key="frame" x="0.0" y="145" width="288" height="20.5"/>
@@ -217,7 +224,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="+123456789" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YYX-91-8uQ">
                                         <rect key="frame" x="0.0" y="174.5" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fpt-pL-PxS" id="y4e-NN-ejj"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Электронная почта:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxp-e0-baU">
                                         <rect key="frame" x="0.0" y="217.5" width="288" height="20.5"/>
@@ -228,7 +238,10 @@
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Укажите адрес электронной почты" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cx-6q-6S5">
                                         <rect key="frame" x="0.0" y="247" width="288" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="fpt-pL-PxS" id="e9a-49-F4l"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -296,16 +309,54 @@
                                     <segue destination="sin-MD-VSX" kind="show" id="i4J-mF-7Mp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5q-Zn-x56">
+                                <rect key="frame" x="139" y="112" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maX-sf-jNq">
+                                <rect key="frame" x="139" y="162" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5H-Hl-cLd">
+                                <rect key="frame" x="139" y="207" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lw-7A-HRe">
+                                <rect key="frame" x="139" y="248" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Btu-1f-sHI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6lw-7A-HRe" firstAttribute="top" secondItem="C5H-Hl-cLd" secondAttribute="bottom" constant="20" id="4Di-Q4-COT"/>
+                            <constraint firstItem="r5q-Zn-x56" firstAttribute="centerX" secondItem="Fku-AZ-Lel" secondAttribute="centerX" id="7yZ-4Y-p4s"/>
+                            <constraint firstItem="6lw-7A-HRe" firstAttribute="centerX" secondItem="Fku-AZ-Lel" secondAttribute="centerX" id="8de-dM-fMr"/>
+                            <constraint firstItem="r5q-Zn-x56" firstAttribute="top" secondItem="Btu-1f-sHI" secondAttribute="top" constant="19.5" id="S6o-zH-r7H"/>
                             <constraint firstItem="Xa5-oI-LS3" firstAttribute="leading" secondItem="Btu-1f-sHI" secondAttribute="leading" constant="102" id="TC7-iS-6Sg"/>
+                            <constraint firstItem="C5H-Hl-cLd" firstAttribute="centerX" secondItem="Fku-AZ-Lel" secondAttribute="centerX" id="VFf-vn-twP"/>
+                            <constraint firstItem="C5H-Hl-cLd" firstAttribute="top" secondItem="maX-sf-jNq" secondAttribute="bottom" constant="24" id="mRU-4L-0hO"/>
+                            <constraint firstItem="maX-sf-jNq" firstAttribute="top" secondItem="r5q-Zn-x56" secondAttribute="bottom" constant="29" id="p4c-24-BhH"/>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="bottom" secondItem="Xa5-oI-LS3" secondAttribute="bottom" constant="30" id="ws2-1W-E2I"/>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="trailing" secondItem="Xa5-oI-LS3" secondAttribute="trailing" constant="102" id="yPd-bA-3OS"/>
+                            <constraint firstItem="maX-sf-jNq" firstAttribute="centerX" secondItem="Fku-AZ-Lel" secondAttribute="centerX" id="z30-gy-L7M"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8IT-fB-g9e"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="6lw-7A-HRe" id="TSg-D5-Qdt"/>
+                        <outlet property="nameLabel" destination="r5q-Zn-x56" id="qNb-Ed-rVX"/>
+                        <outlet property="phoneLabel" destination="C5H-Hl-cLd" id="sc1-Hv-mYR"/>
+                        <outlet property="surnameLabel" destination="maX-sf-jNq" id="Q0K-TP-aAA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Lz-cX-RHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,6 +378,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tzJ-wx-Yym" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ea8-10-JFP">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
