@@ -32,7 +32,6 @@ final class ProductsListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct") as! CustomCellTableViewCell
         let product = products[indexPath.row]
         cell.nameLabel.text = product.name
-        cell.nameLabel.backgroundColor = UIColor.orange
         cell.pictureImageView.image = UIImage(named: product.pictures[0])
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath)
 //        var content = cell.defaultContentConfiguration()

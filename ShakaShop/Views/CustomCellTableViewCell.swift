@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CustomCellTableViewCell: UITableViewCell {
+final class CustomCellTableViewCell: UITableViewCell {
 
     @IBOutlet var pictureImageView: UIImageView!
     @IBOutlet var nameLabel: UILabel!
