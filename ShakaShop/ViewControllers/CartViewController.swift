@@ -26,6 +26,8 @@ class CartViewController: UIViewController, UITableViewDelegate {
         products = getProducts123()
         totalPrice = getTotalPrice()
         
+        title = "Корзина"
+        
         productsCountLabel.text = "\(products.count)"
         totalPriceCount.text = "\(totalPrice)"
         
