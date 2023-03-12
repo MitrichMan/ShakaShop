@@ -22,6 +22,10 @@
 		B6793DE229BC8A8000B9767C /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6793DE129BC8A8000B9767C /* Category.storyboard */; };
 		B6793DE429BC8E7500B9767C /* ShopTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6793DE329BC8E7500B9767C /* ShopTabBarViewController.swift */; };
 		B6793DE629BC8F1300B9767C /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6793DE529BC8F1300B9767C /* CategoryListViewController.swift */; };
+		882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */; };
+		882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE129BC74C500573B46 /* ProductsListViewController.swift */; };
+		882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */; };
+		886FB05329BCB3550088A27C /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FB05229BCB3550088A27C /* CustomCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		B6793DE129BC8A8000B9767C /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
 		B6793DE329BC8E7500B9767C /* ShopTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTabBarViewController.swift; sourceTree = "<group>"; };
 		B6793DE529BC8F1300B9767C /* CategoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsAndDetail.storyboard; sourceTree = "<group>"; };
+		882F7BE129BC74C500573B46 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsListViewController.swift; path = ShakaShop/Storyboards/ProductsListViewController.swift; sourceTree = SOURCE_ROOT; };
+		882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutProductViewController.swift; sourceTree = "<group>"; };
+		886FB05229BCB3550088A27C /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +82,7 @@
 		4D2BF2D229BB1C7300C2AC2F /* ShakaShop */ = {
 			isa = PBXGroup;
 			children = (
-				4D2BF2F829BC800300C2AC2F /* Vievs */,
+				886FB05429BCB35A0088A27C /* Views */,
 				4D2BF2ED29BB242400C2AC2F /* Services */,
 				4D2BF2EC29BB241100C2AC2F /* Models */,
 				4D2BF2E929BB235500C2AC2F /* App */,
@@ -98,6 +106,8 @@
 		4D2BF2EA29BB236500C2AC2F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				882F7BE129BC74C500573B46 /* ProductsListViewController.swift */,
+				882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */,
 				4D2BF2D729BB1C7300C2AC2F /* ViewController.swift */,
 				4D2BF2F629BC791500C2AC2F /* CartViewController.swift */,
 				4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */,
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4D2BF2D929BB1C7300C2AC2F /* Main.storyboard */,
+				882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */,
 				4D2BF2DE29BB1C7500C2AC2F /* LaunchScreen.storyboard */,
 				4D2BF2F429BC5FFF00C2AC2F /* Cart.storyboard */,
 				B6793DE129BC8A8000B9767C /* Category.storyboard */,
@@ -134,12 +145,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4D2BF2F829BC800300C2AC2F /* Vievs */ = {
+		886FB05429BCB35A0088A27C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				886FB05229BCB3550088A27C /* CustomCellTableViewCell.swift */,
 				4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */,
 			);
-			path = Vievs;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +217,7 @@
 				4D2BF2DD29BB1C7500C2AC2F /* Assets.xcassets in Resources */,
 				4D2BF2F529BC5FFF00C2AC2F /* Cart.storyboard in Resources */,
 				4D2BF2DB29BB1C7300C2AC2F /* Main.storyboard in Resources */,
+				882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,9 +230,12 @@
 			files = (
 				4D2BF30229BD96BA00C2AC2F /* PaymentDetailsViewController.swift in Sources */,
 				4D2BF2FA29BC802E00C2AC2F /* CartTableViewCell.swift in Sources */,
+				886FB05329BCB3550088A27C /* CustomCellTableViewCell.swift in Sources */,
 				4D2BF2D829BB1C7300C2AC2F /* ViewController.swift in Sources */,
+				882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */,
 				4D2BF2EF29BB247400C2AC2F /* DataStore.swift in Sources */,
 				B6793DE629BC8F1300B9767C /* CategoryListViewController.swift in Sources */,
+				882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */,
 				4D2BF2D429BB1C7300C2AC2F /* AppDelegate.swift in Sources */,
 				4D2BF2D629BB1C7300C2AC2F /* SceneDelegate.swift in Sources */,
 				4D2BF2F729BC791500C2AC2F /* CartViewController.swift in Sources */,
@@ -375,7 +391,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShakaShop/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -406,7 +422,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShakaShop/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
