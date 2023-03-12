@@ -51,14 +51,14 @@ extension Product {
     static func getProducts() -> [Product] {
         var products: [Product] = []
         
-        let iterationCount = min(
-            ProductsData.shared.productNames.count,
-            ProductsData.shared.productDescription.count,
-            ProductsData.shared.productFeatures.count,
-            ProductsData.shared.productPrices.count
-        )
+//        let iterationCount = min(
+//            ProductsData.shared.productNames.count,
+//            ProductsData.shared.productDescription.count,
+//            ProductsData.shared.productFeatures.count,
+//            ProductsData.shared.productPrices.count
+//        )
         
-        for index in 0..<iterationCount {
+        for index in 0..<ProductsData.shared.productNames.count {
             let names = ProductsData.shared.productNames
             let descriptions = ProductsData.shared.productDescription
             let features = ProductsData.shared.productFeatures
