@@ -68,7 +68,7 @@
 		4D2BF2D229BB1C7300C2AC2F /* ShakaShop */ = {
 			isa = PBXGroup;
 			children = (
-				4D2BF2F829BC800300C2AC2F /* Vievs */,
+				4D2BF2F829BC800300C2AC2F /* Views */,
 				4D2BF2ED29BB242400C2AC2F /* Services */,
 				4D2BF2EC29BB241100C2AC2F /* Models */,
 				4D2BF2E929BB235500C2AC2F /* App */,
@@ -125,12 +125,12 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		4D2BF2F829BC800300C2AC2F /* Vievs */ = {
+		4D2BF2F829BC800300C2AC2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */,
 			);
-			path = Vievs;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
