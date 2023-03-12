@@ -29,7 +29,7 @@ class CartViewController: UIViewController, UITableViewDelegate {
         title = "Корзина"
         
         productsCountLabel.text = "\(products.count)"
-        totalPriceCount.text = "\(totalPrice)"
+        totalPriceCount.text = "\(totalPrice) руб"
         
         cartTableView.delegate = self
         cartTableView.dataSource = self
