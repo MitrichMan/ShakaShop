@@ -11,6 +11,8 @@ class CategoryListViewController: UITableViewController {
 
     var categories: [Category] = []
     
+    var products: [Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,8 +41,19 @@ extension CategoryListViewController {
 }
 
 // MARK: TableViewDelegate
-extension CategoryListViewController {
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
-    }
-}
+//extension CategoryListViewController {
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print("\(indexPath.row) - Number")
+//
+//        guard let tabBar = tabBarController as? ShopTabBarViewController else { return }
+//
+//        if let product = categories[indexPath.row].products.first {
+//            tabBar.add(product: product)
+//        }
+//
+//        products.forEach { product in
+//            print("\(product.name)")
+//        }
+//
+//    }
+//}
