@@ -12,24 +12,24 @@ class CartViewController: UIViewController, UITableViewDelegate {
     @IBOutlet var cartTableView: UITableView!
     
     @IBOutlet var productsCountLabel: UILabel!
-    @IBOutlet var totalPriceCount: UILabel!
+    @IBOutlet var totalPriceLabel: UILabel!
     
     @IBOutlet var goToPaymentButton: UIButton!
     
     let categories = Category.getCategories()
     var products: [Product] = []
-    var totalPrice = 0
+    var totalPrice = "0"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         products = getProducts123()
-        totalPrice = getTotalPrice()
+        totalPrice = getFormattedTotalPrice(from: getTotalPrice())
         
         title = "Корзина"
         
         productsCountLabel.text = "\(products.count)"
-        totalPriceCount.text = "\(totalPrice) руб"
+        totalPriceLabel.text = "\(totalPrice) руб"
         
         cartTableView.delegate = self
         cartTableView.dataSource = self
@@ -40,10 +40,21 @@ class CartViewController: UIViewController, UITableViewDelegate {
     
     private func getTotalPrice() -> Int {
         var totalPrice = 0
+        
         for product in products {
             totalPrice += product.price
         }
         return totalPrice
+    }
+    
+    private func getFormattedTotalPrice(from totalPrice: Int) -> String {
+        let priceAsNumber: NSNumber = totalPrice as NSNumber
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        formatter.decimalSeparator = ","
+        
+        return formatter.string(from:  priceAsNumber) ?? "0"
     }
 }
 

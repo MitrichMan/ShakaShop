@@ -163,7 +163,7 @@
                         <outlet property="cartTableView" destination="3SV-Ku-Fx8" id="PER-1I-e2g"/>
                         <outlet property="goToPaymentButton" destination="QeQ-DM-mDG" id="LnI-do-REC"/>
                         <outlet property="productsCountLabel" destination="pLJ-tf-Ftf" id="IFT-GB-NCR"/>
-                        <outlet property="totalPriceCount" destination="eeD-lo-ujY" id="Vs2-lS-KIj"/>
+                        <outlet property="totalPriceLabel" destination="eeD-lo-ujY" id="Vs2-lS-KIj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDh-t4-sN0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
