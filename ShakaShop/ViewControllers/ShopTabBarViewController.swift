@@ -19,6 +19,7 @@ class ShopTabBarViewController: UITabBarController {
         super.viewDidLoad()
 
         getCategory()
+        getProducts()
     }
     
     func getCategory() {
@@ -35,9 +36,9 @@ class ShopTabBarViewController: UITabBarController {
         
         viewControllers.forEach { viewController in
             if let navigation = viewController as? UINavigationController {
-                let cartVC = navigation.topViewController as? CartViewController
-                guard let cartVC else { return }
-                cartVC.products = products
+                if let cartVC = navigation.topViewController as? CartViewController {
+                    cartVC.products = products
+                }
             }
         }
     }
