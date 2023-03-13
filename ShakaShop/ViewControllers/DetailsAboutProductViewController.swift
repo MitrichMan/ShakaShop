@@ -29,8 +29,23 @@ final class DetailsAboutProductViewController: UIViewController {
         picturesImageView.image = UIImage(named: product.pictures.randomElement() ?? "")
         descriptionTextView.text = product.description
         featuresTextView.text = product.feature
-        priceLabel.text = "\(String(product.price)) руб."
+        priceLabel.text = "\(getFormattedTotalPrice(from: product.price)) руб."
     }
+    
+
+}
+// MARK: - GetPrice
+extension DetailsAboutProductViewController {
+    private func getFormattedTotalPrice(from totalPrice: Int) -> String {
+        let priceAsNumber: NSNumber = totalPrice as NSNumber
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        formatter.decimalSeparator = ","
+        
+        return formatter.string(from:  priceAsNumber) ?? "0"
+    }
+}
     
     /*
     // MARK: - Navigation
@@ -42,4 +57,4 @@ final class DetailsAboutProductViewController: UIViewController {
     }
     */
 
-}
+

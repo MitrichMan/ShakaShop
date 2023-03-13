@@ -23,6 +23,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HIh-VM-WQh" kind="show" id="FHl-oa-xBO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +38,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bv-01-MkY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="611" y="-79"/>
+        </scene>
+        <!--productsList-->
+        <scene sceneID="rM1-oF-fpW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductsAndDetail" referencedIdentifier="productsList" id="HIh-VM-WQh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gUK-2F-nHE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBb-Vi-fTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="-95"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b4o-hp-Lbr">

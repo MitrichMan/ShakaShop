@@ -21,6 +21,14 @@ class CategoryListViewController: UITableViewController {
         let image = UIImage(systemName: "book.fill")
         tabBarItem = UITabBarItem(title: "Products", image: image, tag: 1)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let productListVC = segue.destination as? ProductsListViewController
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        productListVC?.products = categories[indexPath.row].products
+    }
 }
 
 // MARK: TableViewDataSource
