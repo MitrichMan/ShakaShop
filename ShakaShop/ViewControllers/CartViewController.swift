@@ -24,11 +24,8 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        products = getProducts123()
         totalPrice = getFormattedTotalPrice(from: getTotalPrice())
         productsCount = getProductsCount()
-        
-        title = "Корзина"
         
         productsCountLabel.text = "\(productsCount)"
         totalPriceLabel.text = "\(totalPrice) руб"
@@ -37,42 +34,42 @@ class CartViewController: UIViewController {
         cartTableView.dataSource = self
     }
     
-    @IBAction func goToPaymentButtonTapped() {
-    }
-    
-    @objc func removeFromCartButtonTapped(sender: UIButton) {
-        products.remove(at: sender.tag)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        guard let shopVC = tabBarController as? ShopTabBarViewController else { return }
+        products = shopVC.products
         cartTableView.reloadData()
         productsCountLabel.text = "\(getProductsCount())"
         totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
     }
     
-    private func getProductsCount() -> Int {
-        products.count
+    
+//MARK: - @IBActions
+    @IBAction func clearCartButtonTapped() {
+        products = []
+        cartTableView.reloadData()
+        productsCountLabel.text = "\(getProductsCount())"
+        totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
     }
     
-    private func getTotalPrice() -> Int {
-        var totalPrice = 0
-        
-        for product in products {
-            totalPrice += product.price
+    @IBAction func goToPaymentButtonTapped() {
+        if products.count == 0 {
+            showAlert(title: "Упс!", message: "Ваша корзина пуста")
+            return
         }
-        return totalPrice
     }
     
-    private func getFormattedTotalPrice(from totalPrice: Int) -> String {
-        let priceAsNumber: NSNumber = totalPrice as NSNumber
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.groupingSeparator = " "
-        formatter.decimalSeparator = ","
-        
-        return formatter.string(from:  priceAsNumber) ?? "0"
+    @objc func removeFromCartButtonTapped(sender: UIButton) {
+        guard let shopVC = tabBarController as? ShopTabBarViewController else { return }
+        shopVC.removeProduct(at: sender.tag)
+        cartTableView.reloadData()
+        productsCountLabel.text = "\(getProductsCount())"
+        totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
     }
 }
 
+//MARK: - UITableViewDelegate
 extension CartViewController: UITableViewDelegate {
-
 }
 
 //MARK: - UITableViewDataSource
@@ -102,15 +99,38 @@ extension CartViewController: UITableViewDataSource {
     }
 }
 
-// MARK: - Temporary
+//MARK: - Alert
 extension CartViewController {
-    func getProducts123() -> [Product] {
-        var products: [Product] = []
-        for category in categories {
-            if category.name == "Доски для серфинга" {
-                products = category.products
-            }
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
+}
+
+// MARK: - CartViewController
+extension CartViewController {
+    private func getProductsCount() -> Int {
+        products.count
+    }
+    
+    private func getTotalPrice() -> Int {
+        var totalPrice = 0
+        
+        for product in products {
+            totalPrice += product.price
         }
-        return products
+        return totalPrice
+    }
+    
+    private func getFormattedTotalPrice(from totalPrice: Int) -> String {
+        let priceAsNumber: NSNumber = totalPrice as NSNumber
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        formatter.decimalSeparator = ","
+        
+        return formatter.string(from:  priceAsNumber) ?? "0"
     }
 }

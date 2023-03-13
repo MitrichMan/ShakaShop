@@ -28,6 +28,7 @@ class CategoryListViewController: UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         
         productListVC?.products = categories[indexPath.row].products
+        productListVC?.category = categories[indexPath.row]
     }
 }
 

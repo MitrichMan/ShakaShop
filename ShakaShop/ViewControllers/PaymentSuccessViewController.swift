@@ -9,10 +9,10 @@ import UIKit
 
 class PaymentSuccessViewController: UIViewController {
     
-    @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var surnameLabel: UILabel!
-    @IBOutlet var phoneLabel: UILabel!
-    @IBOutlet var emailLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var surnameLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     
     var customerDetails: [String: String] = [:]
     
@@ -26,20 +26,9 @@ class PaymentSuccessViewController: UIViewController {
         emailLabel.text = customerDetails["email"]
     }
     
-    deinit {
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-        print("kkhjkj")
-
-    }
-    
     @IBAction func goShoppingButtonTapped() {
-        dismiss(animated: true)
-        performSegue(withIdentifier: "goToShopping", sender: nil)
+        guard let shopVC = tabBarController as? ShopTabBarViewController else { return }
+        shopVC.removeAllProducts()
+        navigationController?.popToRootViewController(animated: true)
     }
 }
