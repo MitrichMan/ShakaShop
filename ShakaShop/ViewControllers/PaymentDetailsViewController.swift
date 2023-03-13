@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PaymentDetailsViewController: UIViewController {
+final class PaymentDetailsViewController: UIViewController {
     
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var surnameTextField: UITextField!
@@ -16,11 +16,6 @@ class PaymentDetailsViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameTextField.text = "qwerty"
-        surnameTextField.text = "qwerty"
-        phoneTextField.text = "qwerty"
-        emailTextField.text = "qwerty"
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,7 +32,7 @@ class PaymentDetailsViewController: UIViewController {
            emailTextField.text?.isEmpty == false {
             performSegue(withIdentifier: "goToSuccess", sender: nil)
         } else{
-            showAlert(title: "123", message: "456")
+            showAlert(title: "Упс!", message: "Кажется вы забыли что-то заполнить")
             return
         }
     }

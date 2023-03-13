@@ -7,10 +7,9 @@
 
 import UIKit
 
-class PaymentSuccessViewController: UIViewController {
+final class PaymentSuccessViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var surnameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
@@ -19,9 +18,8 @@ class PaymentSuccessViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-
-        nameLabel.text = customerDetails["name"]
-        surnameLabel.text = customerDetails["surname"]
+        
+        nameLabel.text = "\(customerDetails["name"] ?? "") \(customerDetails["surname"] ?? "")"
         phoneLabel.text = customerDetails["phone"]
         emailLabel.text = customerDetails["email"]
     }

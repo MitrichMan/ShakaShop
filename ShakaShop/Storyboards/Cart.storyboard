@@ -47,10 +47,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LmN-Os-u0e">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LmN-Os-u0e">
                                                     <rect key="frame" x="32" y="14" width="61" height="62"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="62" id="MNB-ze-v9A"/>
+                                                        <constraint firstAttribute="height" constant="62" id="Zxt-Ud-EaJ"/>
                                                         <constraint firstAttribute="width" constant="61" id="fKP-Sb-URW"/>
                                                     </constraints>
                                                 </imageView>
@@ -62,13 +62,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="LmN-Os-u0e" secondAttribute="bottom" constant="3" id="1Sr-bd-dLr"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="zH8-0D-Gxd" secondAttribute="trailing" id="5kL-Ab-lCt"/>
-                                                <constraint firstItem="LmN-Os-u0e" firstAttribute="top" secondItem="Jil-Dt-Fwm" secondAttribute="topMargin" constant="3" id="CPV-S1-EZg"/>
+                                                <constraint firstItem="LmN-Os-u0e" firstAttribute="top" secondItem="Jil-Dt-Fwm" secondAttribute="topMargin" constant="3" id="BkK-ew-f9y"/>
                                                 <constraint firstItem="zH8-0D-Gxd" firstAttribute="leading" secondItem="LmN-Os-u0e" secondAttribute="trailing" constant="8" symbolic="YES" id="Gl3-Mz-8sJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zH8-0D-Gxd" secondAttribute="bottom" id="VT7-C5-J2o"/>
                                                 <constraint firstItem="LmN-Os-u0e" firstAttribute="leading" secondItem="Jil-Dt-Fwm" secondAttribute="leadingMargin" constant="16" id="cjn-vH-4Io"/>
                                                 <constraint firstItem="zH8-0D-Gxd" firstAttribute="top" secondItem="Jil-Dt-Fwm" secondAttribute="topMargin" id="smi-EB-5fG"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LmN-Os-u0e" secondAttribute="bottom" constant="3" id="wOJ-I3-Qs6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -356,20 +356,20 @@
                                     <action selector="goToPaymentButtonTapped" destination="Jxm-Ko-tkf" eventType="touchUpInside" id="XzK-vL-Gwc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша заявка принята!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7X-yp-pjM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваша заявка принята!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7X-yp-pjM">
                                 <rect key="frame" x="16" y="92" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте свои данные:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5MD-A2-46V">
-                                <rect key="frame" x="16" y="130" width="288" height="24"/>
+                                <rect key="frame" x="16" y="142" width="288" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="MLQ-Gj-58u">
-                                <rect key="frame" x="16" y="162" width="288" height="213"/>
+                                <rect key="frame" x="16" y="174" width="288" height="158"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-dG-CGg">
                                         <rect key="frame" x="0.0" y="0.0" width="38" height="20.5"/>
@@ -383,47 +383,35 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7U-pb-5ld">
-                                        <rect key="frame" x="0.0" y="55" width="77.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maX-sf-jNq">
-                                        <rect key="frame" x="0.0" y="82.5" width="43.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер телефона:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zZ-ju-BOQ">
-                                        <rect key="frame" x="0.0" y="110" width="140" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="55" width="140" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5H-Hl-cLd">
-                                        <rect key="frame" x="0.0" y="137.5" width="43.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="82.5" width="43.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Электронная почта:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlA-JT-pNw">
-                                        <rect key="frame" x="0.0" y="165" width="159" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="110" width="159" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lw-7A-HRe">
-                                        <rect key="frame" x="0.0" y="192.5" width="43.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="137.5" width="43.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оставайтесь на связи. Наш менеджер свяжется с вами для оплаты." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wab-Xz-ss2">
-                                <rect key="frame" x="16" y="383" width="288" height="72"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оставайтесь на связи. Наш менеджер свяжется с вами для подтверждения оплаты." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wab-Xz-ss2">
+                                <rect key="frame" x="16" y="372" width="288" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -433,10 +421,10 @@
                         <constraints>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="trailing" secondItem="Wab-Xz-ss2" secondAttribute="trailing" constant="16" id="0dT-3B-sh4"/>
                             <constraint firstItem="5MD-A2-46V" firstAttribute="leading" secondItem="Btu-1f-sHI" secondAttribute="leading" constant="16" id="0wJ-JI-nfg"/>
-                            <constraint firstItem="Wab-Xz-ss2" firstAttribute="top" secondItem="MLQ-Gj-58u" secondAttribute="bottom" constant="8" symbolic="YES" id="1t7-Jm-vzW"/>
+                            <constraint firstItem="Wab-Xz-ss2" firstAttribute="top" secondItem="MLQ-Gj-58u" secondAttribute="bottom" constant="40" id="1t7-Jm-vzW"/>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="trailing" secondItem="Xa5-oI-LS3" secondAttribute="trailing" constant="102" id="R5h-Hu-xI4"/>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="trailing" secondItem="n7X-yp-pjM" secondAttribute="trailing" constant="16" id="VDA-ct-6Gk"/>
-                            <constraint firstItem="5MD-A2-46V" firstAttribute="top" secondItem="n7X-yp-pjM" secondAttribute="bottom" constant="8" symbolic="YES" id="VI4-Vh-CLA"/>
+                            <constraint firstItem="5MD-A2-46V" firstAttribute="top" secondItem="n7X-yp-pjM" secondAttribute="bottom" constant="20" id="VI4-Vh-CLA"/>
                             <constraint firstItem="n7X-yp-pjM" firstAttribute="top" secondItem="Fku-AZ-Lel" secondAttribute="top" constant="92" id="WWg-Ti-M04"/>
                             <constraint firstItem="Btu-1f-sHI" firstAttribute="trailing" secondItem="5MD-A2-46V" secondAttribute="trailing" constant="16" id="cjF-yV-uc3"/>
                             <constraint firstItem="MLQ-Gj-58u" firstAttribute="top" secondItem="5MD-A2-46V" secondAttribute="bottom" constant="8" symbolic="YES" id="k2h-te-s2T"/>
@@ -453,7 +441,6 @@
                         <outlet property="emailLabel" destination="6lw-7A-HRe" id="TSg-D5-Qdt"/>
                         <outlet property="nameLabel" destination="r5q-Zn-x56" id="qNb-Ed-rVX"/>
                         <outlet property="phoneLabel" destination="C5H-Hl-cLd" id="sc1-Hv-mYR"/>
-                        <outlet property="surnameLabel" destination="maX-sf-jNq" id="Q0K-TP-aAA"/>
                         <segue destination="cul-Qu-keh" kind="show" identifier="goToShopping" id="iFs-YD-Peg"/>
                     </connections>
                 </viewController>

@@ -25,16 +25,16 @@ final class ProductsData {
         "FCS Connect Screw & Plate GF 9”",
         "FCS II Connect PG 9” Navy",
         "TORQ 8”",
-        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M",
+        "FCS II Accelerator PC Red:Black Thruster, компл. из трех, M",
         "FCS II AM PC Tri Retail Fins Cobalt Medium",
-        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L",
+        "FCS II MF Neo Carbon Tri Retail Fins Black:Charcoal Large, компл. из трех, L",
         "Шнурок-крепление для лиша FCS Strings for charity",
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT",
-        "FCS 7’ All Round Essential Leash Blue/Black",
+        "FCS 7’ All Round Essential Leash Blue:Black",
         "FCS 9’ All Round Calf Essential Leash Black",
         "FCS Julian Midnight Camo",
-        "FCS Sally Fitzgibbon Grey/Bright Pink",
-        "FCS T-3 Black/Charcoal",
+        "FCS Sally Fitzgibbon Grey:Bright Pink",
+        "FCS T-3 Black:Charcoal",
         "Гребень для ваксы STICKY BUMPS Easy Grip Comb",
         "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g",
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g",
@@ -106,7 +106,7 @@ final class ProductsData {
         "TORQ 8”": """
         Плавники TORQ разработаны калифорнийской компанией FUTURES FIN, которая производит одну из самых уважаемых систем плавников в мире.
         """,
-        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M": """
+        "FCS II Accelerator PC Red:Black Thruster, компл. из трех, M": """
         Скорость и быстрая реакция с дополнительным контролем. Плавники превосходно работают в критических условиях. Идеально подходят для серферов, которые любят атаковать волну и выполнять агрессивные повороты.
         Работают в широком диапазоне условий, особенно хороши на резких стенках оверхедов.
         Идеально сочетаются с перформанс шортбордами с умеренным или низким рокером.
@@ -114,7 +114,7 @@ final class ProductsData {
         "FCS II AM PC Tri Retail Fins Cobalt Medium": """
         Шаблон Эла Меррика предназначен для радикального, прогрессивного серфинга. Боковые ребра обеспечивают исключительную скорость и контроль, в то время как меньшее центральное ребро на среднем и большом плавнике обеспечивает быстрое высвобождение через повороты.
         """,
-        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
+        "FCS II MF Neo Carbon Tri Retail Fins Black:Charcoal Large, компл. из трех, L": """
         Плавники FCS II Mick Fanning из очень отзывчивой и легкой конструкции Neo Carbon.
         Neo Carbon -  конструкционный материал в котором плавники изготовлены с точностью выстрела снайпера, с использованием углеродистой ткани с длинными прядями и европейской смолы. В результате получился уникальный материал с беспрецедентным соотношением жесткости к весу, делающий плавники сверхлегкими и отзывчивыми.
         Мик хотел, чтобы плавник был сверхлегким и помогал бы развивать скорость при переходе между поворотами. Они также достаточно жесткие, чтобы выдерживать нагрузку, на изгибе кончика плавника», - Мик Фаннинг.
@@ -125,7 +125,7 @@ final class ProductsData {
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": """
         Лиш Dakine Pro Comp 5ft X 3/16" обеспечивает максимально возможную прочность при минимальном сопротивлении для серфинга на волне до роста. Этот лиш обеспечит безопасность вам и вашей доске и на искусственной волне.
         """,
-        "FCS 7’ All Round Essential Leash Blue/Black": """
+        "FCS 7’ All Round Essential Leash Blue:Black": """
         Прочный и надежный лиш от FCS обеспечит комфортное и безопасное катание на волнах высотой до 8 футов. Полиуретановый шнур, стальные шарниры и удобный вращающийся нейлоновый стреп.
         """,
         "FCS 9’ All Round Calf Essential Leash Black": """
@@ -134,10 +134,10 @@ final class ProductsData {
         "FCS Julian Midnight Camo": """
         Новый Пэд разработан и протестирован совместно с Джулианом Уилсоном. Профессиональные пэды разработаны для максимального удобства райдеров во время серфинга.
         """,
-        "FCS Sally Fitzgibbon Grey/Bright Pink": """
+        "FCS Sally Fitzgibbon Grey:Bright Pink": """
         Промодель австралийской спортсменки Салли Фитцгиббонс. Созданные в результате тесного сотрудничества с ведущими серферами планеты пады серии FCS Athlete Series Traction обладают всеми качествами для ультимативного серфинга в любых условиях.
         """,
-        "FCS T-3 Black/Charcoal": """
+        "FCS T-3 Black:Charcoal": """
         Коврик для серфборда из трех частей. Специально разработан для шортбордов категории performance. Идеальная модель для любителей агрессивного серфинга и радикальных маневров. Модель обладает всеми характеристиками снаряжения профессиональных райдеров и выполнена из самых высококачественных материалов. Идеальный комфорт, поддержка и прочное сцепление с поверхностью обеспечат максимальный контакт стопы с доской, что позволит эффективно управлять финами для ещё больших скорости и драйва.
         """,
         "Гребень для ваксы STICKY BUMPS Easy Grip Comb": """
@@ -257,7 +257,7 @@ final class ProductsData {
         • Высота: 8"
         • Система установки: US Fin Box
         """,
-        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M": """
+        "FCS II Accelerator PC Red:Black Thruster, компл. из трех, M": """
         • Безвинтовая система крепления FCS II
         • Для установки не нужен ключ
         • Комплект из 3-х плавников
@@ -265,7 +265,7 @@ final class ProductsData {
         """,
         //        "FCS II AM PC Tri Retail Fins Cobalt Medium": """
         //        """,
-        //        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": """
+        //        "FCS II MF Neo Carbon Tri Retail Fins Black:Charcoal Large, компл. из трех, L": """
         //        """,
         //        "Шнурок-крепление для лиша FCS Strings for charity": """
         //        """,
@@ -277,7 +277,7 @@ final class ProductsData {
         • Вертлюги из 100%  нержавеющей стали морского класса
         • Совместимость с Easy Clip для максимальной безопасности
         """,
-        "FCS 7’ All Round Essential Leash Blue/Black": """
+        "FCS 7’ All Round Essential Leash Blue:Black": """
         • Толщина шнура: 7 мм
         • Размер волны: 2–8 футов
         • Силиконовая вставка в манжете для плотного прилегания к лодыжке
@@ -300,14 +300,14 @@ final class ProductsData {
         • 3D Рисунок в виде квадратов
         • Продуманая поверхность для лучшего сцепления
         """,
-        "FCS Sally Fitzgibbon Grey/Bright Pink": """
+        "FCS Sally Fitzgibbon Grey:Bright Pink": """
         • Три части
         • Выпуклый рельеф обеспечивает 100% соприкосновение стопы с поверхностью коврика
         • Средний киктейл
         • Новый тип покрытия для дополнительного сцепления
         • Супертонкий для сохранения лучшего контакта с доской
         """,
-        "FCS T-3 Black/Charcoal": """
+        "FCS T-3 Black:Charcoal": """
         • Три части
         • Выпуклый рельеф обеспечивает 100% соприкосновение стопы с поверхностью коврика
         • Высокий киктейл
@@ -334,7 +334,7 @@ final class ProductsData {
         • Температура использования:  тёплая вода 19 ° C - 28 ° C (64 ° F - 74 ° F)
         • Вес: 85 г.
         """,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon ": """
+        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": """
         • Застежка на кулиско
         • Размер : 6'7
         • Состав : плотная и эластичная ткань
@@ -371,22 +371,22 @@ final class ProductsData {
         "FCS Connect Screw & Plate GF 9”": 4312,
         "FCS II Connect PG 9” Navy": 7524,
         "TORQ 8”": 5535,
-        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M": 8316,
+        "FCS II Accelerator PC Red:Black Thruster, компл. из трех, M": 8316,
         "FCS II AM PC Tri Retail Fins Cobalt Medium": 9900,
-        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": 7524,
+        "FCS II MF Neo Carbon Tri Retail Fins Black:Charcoal Large, компл. из трех, L": 7524,
         "Шнурок-крепление для лиша FCS Strings for charity": 200,
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": 2610,
-        "FCS 7’ All Round Essential Leash Blue/Black": 3696,
+        "FCS 7’ All Round Essential Leash Blue:Black": 3696,
         "FCS 9’ All Round Calf Essential Leash Black": 3802,
         "FCS Julian Midnight Camo": 3881,
-        "FCS Sally Fitzgibbon Grey/Bright Pink": 3493,
-        "FCS T-3 Black/Charcoal": 3208,
+        "FCS Sally Fitzgibbon Grey:Bright Pink": 3493,
+        "FCS T-3 Black:Charcoal": 3208,
         "Гребень для ваксы STICKY BUMPS Easy Grip Comb": 276,
         "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g": 453,
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g": 453,
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g": 453,
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g": 453,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon ": 4664,
+        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": 4664,
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": 10500,
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": 6850,
     ]
@@ -408,24 +408,24 @@ final class ProductsData {
         "FCS Connect Screw & Plate GF 9”": .fins,
         "FCS II Connect PG 9” Navy": .fins,
         "TORQ 8”": .fins,
-        "FCS II Accelerator PC Red/Black Thruster, компл. из трех, M": .fins,
+        "FCS II Accelerator PC Red:Black Thruster, компл. из трех, M": .fins,
         "FCS II AM PC Tri Retail Fins Cobalt Medium": .fins,
-        "FCS II MF Neo Carbon Tri Retail Fins Black/Charcoal Large, компл. из трех, L": .fins,
+        "FCS II MF Neo Carbon Tri Retail Fins Black:Charcoal Large, компл. из трех, L": .fins,
         "Шнурок-крепление для лиша FCS Strings for charity": .leashes,
         "DAKINE JOHN JOHN FLORENCE COMP 5’ PORT": .leashes,
-        "FCS 7’ All Round Essential Leash Blue/Black": .leashes,
+        "FCS 7’ All Round Essential Leash Blue:Black": .leashes,
         "FCS 9’ All Round Calf Essential Leash Black": .leashes,
         "FCS Julian Midnight Camo": .tractionPads,
-        "FCS Sally Fitzgibbon Grey/Bright Pink": .tractionPads,
-        "FCS T-3 Black/Charcoal": .tractionPads,
+        "FCS Sally Fitzgibbon Grey:Bright Pink": .tractionPads,
+        "FCS T-3 Black:Charcoal": .tractionPads,
         "Гребень для ваксы STICKY BUMPS Easy Grip Comb": .wax,
         "STICKY BUMPS Original Basecoat - Boxed Wax, 85 g": .wax,
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g": .wax,
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g": .wax,
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g": .wax,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon ": .bags,
+        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": .bags,
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": .bags,
-        "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": .bags,
+        "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": .bags
     ]
     
     enum Categories: String, CaseIterable  {
