@@ -17,11 +17,12 @@ class ShopTabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         getCategory()
-        getProducts()
     }
-    
+}
+
+extension ShopTabBarViewController {
     func getCategory() {
         guard let navigation = viewControllers?.first as? UINavigationController
             else { return }
@@ -43,8 +44,15 @@ class ShopTabBarViewController: UITabBarController {
         }
     }
     
+    func removeAllProducts() {
+        products = []
+    }
+    
+    func removeProduct(at index: Int) {
+        products.remove(at: index)
+    }
+    
     func add(product: Product) {
         products.append(product)
     }
-
 }
