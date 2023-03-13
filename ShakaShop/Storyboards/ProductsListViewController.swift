@@ -9,10 +9,14 @@ import UIKit
 
 final class ProductsListViewController: UITableViewController {
     
-    var products = Product.getProducts()
+    var products: [Product] = []
+    var category: Category!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = category.name
+        
+    
     }
 
     // MARK: - Table view data source
@@ -53,10 +57,8 @@ final class ProductsListViewController: UITableViewController {
     }
 }
 
-
-
 extension ProductsListViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        90
+        80
     }
 }
