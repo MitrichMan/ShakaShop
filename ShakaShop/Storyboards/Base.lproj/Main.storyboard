@@ -38,10 +38,10 @@
         <!--CartViewController-->
         <scene sceneID="ipo-jS-HNP">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9EO-5v-ouR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Cart" referencedIdentifier="CartViewController" id="iQg-Q4-X0b" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="iIj-Xb-5fY"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9EO-5v-ouR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="689" y="-56"/>
         </scene>

@@ -16,6 +16,11 @@ class PaymentDetailsViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.text = "qwerty"
+        surnameTextField.text = "qwerty"
+        phoneTextField.text = "qwerty"
+        emailTextField.text = "qwerty"
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,6 +31,15 @@ class PaymentDetailsViewController: UIViewController {
     }
     
     @IBAction func sendDetailsButtonTapped() {
+        if nameTextField.text?.isEmpty == false,
+           surnameTextField.text?.isEmpty == false,
+           phoneTextField.text?.isEmpty == false,
+           emailTextField.text?.isEmpty == false {
+            performSegue(withIdentifier: "goToSuccess", sender: nil)
+        } else{
+            showAlert(title: "123", message: "456")
+            return
+        }
     }
 }
 
@@ -54,8 +68,17 @@ extension PaymentDetailsViewController: UITextFieldDelegate {
         } else if textField == phoneTextField {
             emailTextField.becomeFirstResponder()
         } else {
-            performSegue(withIdentifier: "goToSuccess", sender: nil)
+            sendDetailsButtonTapped()
         }
         return true
+    }
+}
+
+extension PaymentDetailsViewController {
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: true)
     }
 }
