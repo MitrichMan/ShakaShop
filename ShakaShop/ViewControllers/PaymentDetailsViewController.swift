@@ -50,14 +50,37 @@ extension PaymentDetailsViewController: UITextFieldDelegate {
             surnameTextField.becomeFirstResponder()
         } else if textField == surnameTextField {
             phoneTextField.becomeFirstResponder()
-        } else if textField == phoneTextField {
-            emailTextField.becomeFirstResponder()
         } else {
             sendDetailsButtonTapped()
         }
         return true
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+            guard textField == phoneTextField else { return }
+            let toolBar = UIToolbar()
+            toolBar.sizeToFit()
+            let doneBarButton = UIBarButtonItem(
+                title: "Next",
+                style: .plain,
+                target: self,
+                action: #selector(barButtonTapped)
+            )
+            let flexibleSpace = UIBarButtonItem(
+                barButtonSystemItem: .flexibleSpace,
+                target: self,
+                action: nil
+            )
+            toolBar.items = [flexibleSpace ,doneBarButton]
+        textField.inputAccessoryView = toolBar
+    }
+
+    @objc private func barButtonTapped() -> Bool {
+        emailTextField.becomeFirstResponder()
+    }
 }
+
+
 
 // MARK: - PaymentDetailsViewController
 private extension PaymentDetailsViewController {
