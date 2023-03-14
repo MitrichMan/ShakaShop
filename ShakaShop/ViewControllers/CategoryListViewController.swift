@@ -39,11 +39,12 @@ extension CategoryListViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryRow", for: indexPath)
-        var content = cell.defaultContentConfiguration()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryRow", for: indexPath) as! CategoryTableViewCell
+//        let content = cell.defaultContentConfiguration()
         
-        content.text = categories[indexPath.row].name
-        cell.contentConfiguration = content
+        cell.categoryImageView.image = UIImage(named: categories[indexPath.row].name)
+        cell.categoryLabel.text = categories[indexPath.row].name
+//        cell.contentConfiguration = content
         
         return cell
     }

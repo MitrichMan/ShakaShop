@@ -113,7 +113,6 @@ private extension CartViewController {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.groupingSeparator = " "
-        formatter.decimalSeparator = ","
         
         return formatter.string(from:  priceAsNumber) ?? "0"
     }
