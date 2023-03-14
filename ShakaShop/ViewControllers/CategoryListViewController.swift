@@ -16,10 +16,10 @@ class CategoryListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Category"
+        title = "Категории"
         
         let image = UIImage(systemName: "book.fill")
-        tabBarItem = UITabBarItem(title: "Products", image: image, tag: 1)
+        tabBarItem = UITabBarItem(title: "Товары", image: image, tag: 1)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,21 +48,3 @@ extension CategoryListViewController {
         return cell
     }
 }
-
-// MARK: TableViewDelegate
-//extension CategoryListViewController {
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("\(indexPath.row) - Number")
-//
-//        guard let tabBar = tabBarController as? ShopTabBarViewController else { return }
-//
-//        if let product = categories[indexPath.row].products.first {
-//            tabBar.add(product: product)
-//        }
-//
-//        products.forEach { product in
-//            print("\(product.name)")
-//        }
-//
-//    }
-//}
