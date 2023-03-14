@@ -27,7 +27,7 @@ final class DetailsAboutProductViewController: UIViewController {
     
     @IBAction func imageButton(_ sender: Any) {
         actionButton.setTitle("В корзине", for: .normal)
-        showAlert(title: "Внимание", message: "Товар \(product.name) добавлен в корзину")
+        showAlert(title: "Хороший выбор!", message: "\(product.name) добавлен в корзину")
         guard let shopTabBarVC = tabBarController as? ShopTabBarViewController else { return }
         shopTabBarVC.add(product: product)
     }

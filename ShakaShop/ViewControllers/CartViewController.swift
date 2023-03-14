@@ -122,6 +122,6 @@ private extension CartViewController {
         productsCount = products.count
         
         productsCountLabel.text = "\(productsCount)"
-        totalPriceLabel.text = "\(totalPrice) руб"
+        totalPriceLabel.text = "\(totalPrice) руб."
     }
 }

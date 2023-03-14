@@ -18,7 +18,7 @@ final class ProductsListViewController: UITableViewController {
     }
     
     @objc func addToCartButtonTapped(sender: UIButton) {
-        showAlert(title: "Внимание", message: "Товар \(products[sender.tag].name) добавлен в корзину")
+        showAlert(title: "Хороший выбор!", message: "\(products[sender.tag].name) добавлен в корзину")
         guard let shopTabBarVC = tabBarController as? ShopTabBarViewController else { return }
         shopTabBarVC.add(product: products[sender.tag])
     }
