@@ -8,30 +8,25 @@
 import UIKit
 
 final class CartViewController: UIViewController {
-
+    
     @IBOutlet var cartTableView: UITableView!
     
     @IBOutlet var productsCountLabel: UILabel!
     @IBOutlet var totalPriceLabel: UILabel!
     
-    @IBOutlet var goToPaymentButton: UIButton!
-        
     let categories = Category.getCategories()
-    var products: [Product] = []
-    var totalPrice = "0"
-    var productsCount = 0
-
+    
+    private var products: [Product] = []
+    private var totalPrice = "0"
+    private var productsCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        totalPrice = getFormattedTotalPrice(from: getTotalPrice())
-        productsCount = getProductsCount()
-        
-        productsCountLabel.text = "\(productsCount)"
-        totalPriceLabel.text = "\(totalPrice) руб"
-        
         cartTableView.delegate = self
         cartTableView.dataSource = self
+        
+        setupCartData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,17 +34,15 @@ final class CartViewController: UIViewController {
         guard let shopVC = tabBarController as? ShopTabBarViewController else { return }
         products = shopVC.products
         cartTableView.reloadData()
-        productsCountLabel.text = "\(getProductsCount())"
-        totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
+        setupCartData()
     }
     
     
-//MARK: - @IBActions
+    //MARK: - @IBActions
     @IBAction func clearCartButtonTapped() {
         products = []
         cartTableView.reloadData()
-        productsCountLabel.text = "\(getProductsCount())"
-        totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
+        setupCartData()
     }
     
     @IBAction func goToPaymentButtonTapped() {
@@ -63,8 +56,7 @@ final class CartViewController: UIViewController {
         guard let shopVC = tabBarController as? ShopTabBarViewController else { return }
         shopVC.removeProduct(at: sender.tag)
         cartTableView.reloadData()
-        productsCountLabel.text = "\(getProductsCount())"
-        totalPriceLabel.text = "\(getFormattedTotalPrice(from: getTotalPrice())) руб"
+        setupCartData()
     }
 }
 
@@ -99,23 +91,16 @@ extension CartViewController: UITableViewDataSource {
     }
 }
 
-//MARK: - Alert
-extension CartViewController {
-    private func showAlert(title: String, message: String) {
+// MARK: - CartViewController
+private extension CartViewController {
+    func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-}
-
-// MARK: - CartViewController
-extension CartViewController {
-    private func getProductsCount() -> Int {
-        products.count
-    }
     
-    private func getTotalPrice() -> Int {
+    func getTotalPrice() -> Int {
         var totalPrice = 0
         
         for product in products {
@@ -124,7 +109,7 @@ extension CartViewController {
         return totalPrice
     }
     
-    private func getFormattedTotalPrice(from totalPrice: Int) -> String {
+    func getFormattedTotalPrice(from totalPrice: Int) -> String {
         let priceAsNumber: NSNumber = totalPrice as NSNumber
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -132,5 +117,13 @@ extension CartViewController {
         formatter.decimalSeparator = ","
         
         return formatter.string(from:  priceAsNumber) ?? "0"
+    }
+    
+    func setupCartData() {
+        totalPrice = getFormattedTotalPrice(from: getTotalPrice())
+        productsCount = products.count
+        
+        productsCountLabel.text = "\(productsCount)"
+        totalPriceLabel.text = "\(totalPrice) руб"
     }
 }
