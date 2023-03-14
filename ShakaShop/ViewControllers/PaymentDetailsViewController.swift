@@ -68,7 +68,7 @@ extension PaymentDetailsViewController: UITextFieldDelegate {
             )
             let flexibleSpace = UIBarButtonItem(
                 barButtonSystemItem: .flexibleSpace,
-                target: self,
+                target: nil,
                 action: nil
             )
             toolBar.items = [flexibleSpace ,doneBarButton]
