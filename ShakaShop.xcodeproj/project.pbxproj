@@ -22,6 +22,7 @@
 		4D5517FC29BDE7A600ABC68C /* PaymentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5517FB29BDE7A600ABC68C /* PaymentSuccessViewController.swift */; };
 		4DDE2C3329C027DD0037F9B5 /* Authors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE2C3229C027DD0037F9B5 /* Authors.storyboard */; };
 		4DDE2C3529C0294D0037F9B5 /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE2C3429C0294D0037F9B5 /* AuthorsViewController.swift */; };
+		4DDE2C3729C034200037F9B5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE2C3629C034200037F9B5 /* CategoryTableViewCell.swift */; };
 		882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */; };
 		882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE129BC74C500573B46 /* ProductsListViewController.swift */; };
 		882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */; };
@@ -49,6 +50,7 @@
 		4D5517FB29BDE7A600ABC68C /* PaymentSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessViewController.swift; sourceTree = "<group>"; };
 		4DDE2C3229C027DD0037F9B5 /* Authors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authors.storyboard; sourceTree = "<group>"; };
 		4DDE2C3429C0294D0037F9B5 /* AuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewController.swift; sourceTree = "<group>"; };
+		4DDE2C3629C034200037F9B5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsAndDetail.storyboard; sourceTree = "<group>"; };
 		882F7BE129BC74C500573B46 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsListViewController.swift; path = ShakaShop/Storyboards/ProductsListViewController.swift; sourceTree = SOURCE_ROOT; };
 		882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutProductViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			children = (
 				886FB05229BCB3550088A27C /* CustomCellTableViewCell.swift */,
 				4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */,
+				4DDE2C3629C034200037F9B5 /* CategoryTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				4D2BF2D829BB1C7300C2AC2F /* ViewController.swift in Sources */,
 				882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */,
 				4D5517FC29BDE7A600ABC68C /* PaymentSuccessViewController.swift in Sources */,
+				4DDE2C3729C034200037F9B5 /* CategoryTableViewCell.swift in Sources */,
 				4D2BF2EF29BB247400C2AC2F /* DataStore.swift in Sources */,
 				B6793DE629BC8F1300B9767C /* CategoryListViewController.swift in Sources */,
 				882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */,
@@ -397,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT86C553FH;
@@ -428,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WT86C553FH;
