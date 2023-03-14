@@ -15,8 +15,6 @@ final class ProductsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = category.name
-        
-    
     }
 
     // MARK: - Table view data source
@@ -24,26 +22,11 @@ final class ProductsListViewController: UITableViewController {
         products.count
     }
     
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct") as? CustomCellTableViewCell
-//        let product = products[section]
-//        cell?.nameLabel.text = product.name
-//        //cell?.pictureImageView.image = UIImage(named: product.pictures[1])
-//        return cell
-//    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct") as! CustomCellTableViewCell
         let product = products[indexPath.row]
         cell.nameLabel.text = product.name
         cell.pictureImageView.image = UIImage(named: product.pictures[0])
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath)
-//        var content = cell.defaultContentConfiguration()
-//        let product = products[indexPath.row]
-//
-//        content.text = product.name
-//        content.image = UIImage(named: product.pictures[0])
-//        cell.contentConfiguration = content
 
         return cell
     }
