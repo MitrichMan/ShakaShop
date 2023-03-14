@@ -38,17 +38,7 @@ final class PaymentDetailsViewController: UIViewController {
     }
 }
 
-extension PaymentDetailsViewController {
-    private func getCustomerDetails() -> [String: String] {
-        var customerDetails: [String: String] = [:]
-        customerDetails["name"] = nameTextField.text
-        customerDetails["surname"] = surnameTextField.text
-        customerDetails["phone"] = phoneTextField.text
-        customerDetails["email"] = emailTextField.text
-        return customerDetails
-    }
-}
-
+//MARK: - UITextFieldDelegate
 extension PaymentDetailsViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -69,8 +59,18 @@ extension PaymentDetailsViewController: UITextFieldDelegate {
     }
 }
 
-extension PaymentDetailsViewController {
-    private func showAlert(title: String, message: String) {
+// MARK: - PaymentDetailsViewController
+private extension PaymentDetailsViewController {
+     func getCustomerDetails() -> [String: String] {
+        var customerDetails: [String: String] = [:]
+        customerDetails["name"] = nameTextField.text
+        customerDetails["surname"] = surnameTextField.text
+        customerDetails["phone"] = phoneTextField.text
+        customerDetails["email"] = emailTextField.text
+        return customerDetails
+    }
+
+     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default)
         alert.addAction(okAction)

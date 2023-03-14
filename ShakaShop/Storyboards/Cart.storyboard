@@ -190,7 +190,6 @@
                     <navigationItem key="navigationItem" title="Корзина" largeTitleDisplayMode="always" id="bN4-om-Wad"/>
                     <connections>
                         <outlet property="cartTableView" destination="3SV-Ku-Fx8" id="PER-1I-e2g"/>
-                        <outlet property="goToPaymentButton" destination="QeQ-DM-mDG" id="LnI-do-REC"/>
                         <outlet property="productsCountLabel" destination="pLJ-tf-Ftf" id="IFT-GB-NCR"/>
                         <outlet property="totalPriceLabel" destination="eeD-lo-ujY" id="Vs2-lS-KIj"/>
                     </connections>
