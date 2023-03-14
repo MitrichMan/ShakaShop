@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Авторы-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Authors" id="Y6W-OH-hqX" customClass="AuthorsViewController" customModule="ShakaShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Sc1-xO-ROk">
+                                <rect key="frame" x="77.5" y="20" width="165" height="489.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EUt-wS-dCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="158.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DmitriiMelnikov" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-6z-fr7">
+                                                <rect key="frame" x="17.5" y="0.0" width="130" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="6g8-fD-ezI"/>
+                                                    <constraint firstAttribute="height" constant="130" id="qXO-It-KMm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дмитрий Мельников" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ai-Hg-tdZ">
+                                                <rect key="frame" x="0.0" y="138" width="165" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1n4-MF-vS7">
+                                        <rect key="frame" x="17.5" y="165.5" width="130" height="158.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DmitriyLubov" translatesAutoresizingMaskIntoConstraints="NO" id="3I8-OC-llh">
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="130" id="Sap-ld-p4y"/>
+                                                    <constraint firstAttribute="width" constant="130" id="rd3-n3-Hev"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дмитрий Лубов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vht-ij-To4">
+                                                <rect key="frame" x="2" y="138" width="126" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a2Z-sU-Lyt">
+                                        <rect key="frame" x="15.5" y="331" width="134.5" height="158.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ArtemLatushkin" translatesAutoresizingMaskIntoConstraints="NO" id="TDF-1b-RSc">
+                                                <rect key="frame" x="2" y="0.0" width="130" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="4G3-c0-C7g"/>
+                                                    <constraint firstAttribute="height" constant="130" id="7cM-We-HqJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Артем Латушкин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkK-JI-wE1">
+                                                <rect key="frame" x="0.0" y="138" width="134.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sc1-xO-ROk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="dyj-oM-Lds"/>
+                            <constraint firstItem="Sc1-xO-ROk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="njT-nR-1b0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Авторы" image="person.3.fill" catalog="system" id="XY2-VI-pLJ"/>
+                    <connections>
+                        <outlet property="firstAuthorImageView" destination="NVF-6z-fr7" id="PuE-Vj-qSh"/>
+                        <outlet property="secondAuthorImageView" destination="3I8-OC-llh" id="i07-LG-eMs"/>
+                        <outlet property="thirdAuthorImageView" destination="TDF-1b-RSc" id="hhI-a6-6Vh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123.125" y="-2.112676056338028"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ArtemLatushkin" width="240" height="240"/>
+        <image name="DmitriiMelnikov" width="240" height="240"/>
+        <image name="DmitriyLubov" width="240" height="240"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
