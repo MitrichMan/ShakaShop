@@ -13,10 +13,9 @@ final class CartViewController: UIViewController {
     
     @IBOutlet var productsCountLabel: UILabel!
     @IBOutlet var totalPriceLabel: UILabel!
+        
+    var products: [Product] = []
     
-    let categories = Category.getCategories()
-    
-    private var products: [Product] = []
     private var totalPrice = "0"
     private var productsCount = 0
     

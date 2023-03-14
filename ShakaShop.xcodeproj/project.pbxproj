@@ -20,6 +20,8 @@
 		4D2BF2FA29BC802E00C2AC2F /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */; };
 		4D2BF30229BD96BA00C2AC2F /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */; };
 		4D5517FC29BDE7A600ABC68C /* PaymentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5517FB29BDE7A600ABC68C /* PaymentSuccessViewController.swift */; };
+		4DDE2C3329C027DD0037F9B5 /* Authors.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDE2C3229C027DD0037F9B5 /* Authors.storyboard */; };
+		4DDE2C3529C0294D0037F9B5 /* AuthorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDE2C3429C0294D0037F9B5 /* AuthorsViewController.swift */; };
 		882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */; };
 		882F7BE229BC74C500573B46 /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE129BC74C500573B46 /* ProductsListViewController.swift */; };
 		882F7BE429BC74FA00573B46 /* DetailsAboutProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */; };
@@ -45,6 +47,8 @@
 		4D2BF2F929BC802E00C2AC2F /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
 		4D5517FB29BDE7A600ABC68C /* PaymentSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessViewController.swift; sourceTree = "<group>"; };
+		4DDE2C3229C027DD0037F9B5 /* Authors.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authors.storyboard; sourceTree = "<group>"; };
+		4DDE2C3429C0294D0037F9B5 /* AuthorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorsViewController.swift; sourceTree = "<group>"; };
 		882F7BDF29BC736D00573B46 /* ProductsAndDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsAndDetail.storyboard; sourceTree = "<group>"; };
 		882F7BE129BC74C500573B46 /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProductsListViewController.swift; path = ShakaShop/Storyboards/ProductsListViewController.swift; sourceTree = SOURCE_ROOT; };
 		882F7BE329BC74FA00573B46 /* DetailsAboutProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAboutProductViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				4D2BF2F629BC791500C2AC2F /* CartViewController.swift */,
 				4D2BF30129BD96BA00C2AC2F /* PaymentDetailsViewController.swift */,
 				4D5517FB29BDE7A600ABC68C /* PaymentSuccessViewController.swift */,
+				4DDE2C3429C0294D0037F9B5 /* AuthorsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				4D2BF2DE29BB1C7500C2AC2F /* LaunchScreen.storyboard */,
 				4D2BF2F429BC5FFF00C2AC2F /* Cart.storyboard */,
 				B6793DE129BC8A8000B9767C /* Category.storyboard */,
+				4DDE2C3229C027DD0037F9B5 /* Authors.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -220,6 +226,7 @@
 				4D2BF2DD29BB1C7500C2AC2F /* Assets.xcassets in Resources */,
 				4D2BF2F529BC5FFF00C2AC2F /* Cart.storyboard in Resources */,
 				4D2BF2DB29BB1C7300C2AC2F /* Main.storyboard in Resources */,
+				4DDE2C3329C027DD0037F9B5 /* Authors.storyboard in Resources */,
 				882F7BE029BC736D00573B46 /* ProductsAndDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDE2C3529C0294D0037F9B5 /* AuthorsViewController.swift in Sources */,
 				4D2BF30229BD96BA00C2AC2F /* PaymentDetailsViewController.swift in Sources */,
 				4D2BF2FA29BC802E00C2AC2F /* CartTableViewCell.swift in Sources */,
 				886FB05329BCB3550088A27C /* CustomCellTableViewCell.swift in Sources */,

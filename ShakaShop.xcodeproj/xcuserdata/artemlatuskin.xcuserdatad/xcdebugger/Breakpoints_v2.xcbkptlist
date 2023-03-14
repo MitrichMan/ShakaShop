@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0BD66CAE-7969-4DFD-9D1C-94D5A82E94EC"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/CategoryListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CategoryListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - e02f25639f78854b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.products.getter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - 97c6f97472f2dd37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.products.setter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - 6ebef159ea2a2346"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - 4b9fde05458f86f5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - 2229a5fd060fdef7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(style: __C.UITableViewStyle) -&gt; ShakaShop.CategoryListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - 9787557c07349ebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ShakaShop.CategoryListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "7203E292-B72B-467B-A435-78B4B7A5ED4E - ccc93f221cba05e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShakaShop.CategoryListViewController&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "990EF39A-69F4-4679-A769-FDA352AD266F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/Storyboards/ProductsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ProductsListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - 4f4918d98baef11b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.products.getter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - d8e34ccd1e34b90f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.products.setter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - c1db44f386e3531e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - 77bbfd960d408cc9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - 885b68e9ea9f0e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.init(style: __C.UITableViewStyle) -&gt; ShakaShop.ProductsListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - 7b3c408c23a930af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ShakaShop.ProductsListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "990EF39A-69F4-4679-A769-FDA352AD266F - 5602baf21067a595"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ProductsListViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShakaShop.ProductsListViewController&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/Storyboards/ProductsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF538863-B131-44FC-9239-67882D4E0B50"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/CategoryListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CategoryListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - 29dac5921141077"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.categories.getter : Swift.Array&lt;ShakaShop.Category&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - fc015531b4d6646b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.categories.setter : Swift.Array&lt;ShakaShop.Category&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - ae9ab4e05bc1bb7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.categories.modify : Swift.Array&lt;ShakaShop.Category&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - 1aa311f3bc887447"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.categories.modify : Swift.Array&lt;ShakaShop.Category&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - 2229a5fd060fdeb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(style: __C.UITableViewStyle) -&gt; ShakaShop.CategoryListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - 9787557c07349ef3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ShakaShop.CategoryListViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "DF538863-B131-44FC-9239-67882D4E0B50 - ccc93f221cba05a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.CategoryListViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShakaShop.CategoryListViewController&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/CategoryListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A296B6C7-D33D-4367-A9BD-FA27F79DBC56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "products"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "products"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - f1256eb0dee24654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.products.getter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - c3d499c6ef34be58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.products.setter : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - 30f5afdb99f4e469"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - b6b333ef088db232"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.products.modify : Swift.Array&lt;ShakaShop.Product&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - 14a076a54f78b830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; ShakaShop.ShopTabBarViewController"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "789768DC-7ABB-49FE-9AC0-B90C56596BC6 - 5b19073f4092577a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShakaShop.ShopTabBarViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;ShakaShop.ShopTabBarViewController&gt;"
+                  moduleName = "ShakaShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/artemlatuskin/Documents/GitHub/ShakaShop/ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "512AC541-5FFA-4D57-A35D-DAFF426B4AB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "removeAllProducts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74AE797E-B1AB-406C-8D8E-8E10D8B60851"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShakaShop/ViewControllers/ShopTabBarViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
