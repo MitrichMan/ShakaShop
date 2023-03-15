@@ -1,8 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon 1.jpeg",
-      "idiom" : "universal"
+      "filename" : "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
