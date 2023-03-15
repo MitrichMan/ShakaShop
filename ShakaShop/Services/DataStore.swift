@@ -40,7 +40,7 @@ final class ProductsData {
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g",
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g",
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g",
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon",
+        "Чехол-носок для серфборда FCS Stretch Fun Board 6’7” Carbon",
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex",
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex",
     ]
@@ -155,7 +155,7 @@ final class ProductsData {
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g": """
         Натуральная, биоразлагаемая и нетоксичная вакса для сёрфборда легко наносится и долго держится. Подходит для сёрфинга в тёплой воде 19 ° C - 28 ° C. Используйте ваксу вместе с базовым покрытием Sticky Bumps Basecoat для лучшего эффекта. Вы полюбите эту ваксу не только за её свойства, но и за чудесный аромат черники.
         """,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": """
+        "Чехол-носок для серфборда FCS Stretch Fun Board 6’7” Carbon": """
         Чехол отлично подойдет для перевозки в машине и на небольшие дистанции, хорошая защита от солнца, пыли и песка. Так же защитит от небольших повреждений при перевозке.
         """,
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": """
@@ -334,7 +334,7 @@ final class ProductsData {
         • Температура использования:  тёплая вода 19 ° C - 28 ° C (64 ° F - 74 ° F)
         • Вес: 85 г.
         """,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": """
+        "Чехол-носок для серфборда FCS Stretch Fun Board 6’7” Carbon": """
         • Застежка на кулиско
         • Размер : 6'7
         • Состав : плотная и эластичная ткань
@@ -386,7 +386,7 @@ final class ProductsData {
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g": 453,
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g": 453,
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g": 453,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": 4664,
+        "Чехол-носок для серфборда FCS Stretch Fun Board 6’7” Carbon": 4664,
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": 10500,
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": 6850,
     ]
@@ -423,7 +423,7 @@ final class ProductsData {
         "STICKY BUMPS Original Cool - Boxed Wax, 85 g": .wax,
         "STICKY BUMPS Original Tropical - Boxed Wax, 85 g": .wax,
         "STICKY BUMPS Original Warm - Boxed Wax, 85 g": .wax,
-        "Чехол-носок для сёрфборда FCS Stretch Fun Board 6’7” Carbon": .bags,
+        "Чехол-носок для серфборда FCS Stretch Fun Board 6’7” Carbon": .bags,
         "Channel Islands 9’0” Feather Lite Longboard Bag, Charcoal Hex": .bags,
         "Channel Islands Feather Lite Specialty Bag 6’1”, Charcoal Hex": .bags
     ]
