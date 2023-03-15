@@ -9,6 +9,7 @@ import UIKit
 
 final class DetailsAboutProductViewController: UIViewController {
     
+    @IBOutlet var nameProductLabel: UILabel!
     @IBOutlet var picturesImageView: UIImageView!
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var priceLabel: UILabel!
@@ -19,7 +20,9 @@ final class DetailsAboutProductViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = product.name
+        
+        title = "О товаре:"
+        
         settingsProduct()
         actionButton.setTitle("В корзину", for: .normal)
         
@@ -33,6 +36,7 @@ final class DetailsAboutProductViewController: UIViewController {
     }
     
     private func settingsProduct() {
+        nameProductLabel.text = product.name
         picturesImageView.image = UIImage(named: product.pictures.randomElement() ?? "")
         descriptionTextView.text = product.description
         featuresTextView.text = product.feature
